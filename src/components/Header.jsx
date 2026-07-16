@@ -15,7 +15,7 @@ export default function Header() {
 
         {/* Logo */}
         <a
-          href="#hero"
+          href="#HeroBanner"
           className="font-hand text-4xl text-[#2d2520] hover:scale-105 transition-transform"
         >
           MM
@@ -98,7 +98,7 @@ export default function Header() {
 
       </div>
 
- 
+
 
     </header>
   );
