@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HeroBanner() {
   return (
-   <section className="bg-[#edece7] pb-14">
+   <section id="hero" className="bg-[#edece7] pb-14">
       <div className="max-w-[1350px] mx-auto px-6 lg:px-10">
 
 <section className="bg-[#edece7] pt-10 pb-8">

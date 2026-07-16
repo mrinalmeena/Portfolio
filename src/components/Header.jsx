@@ -1,7 +1,7 @@
 import React from "react";
 
 const navItems = [
-  { name: "About", href: "#WhoAmI" },
+  { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Education", href: "#education" },
@@ -15,7 +15,7 @@ export default function Header() {
 
         {/* Logo */}
         <a
-          href="#HeroBanner"
+          href="#hero"
           className="font-hand text-4xl text-[#2d2520] hover:scale-105 transition-transform"
         >
           MM
