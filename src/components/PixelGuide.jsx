@@ -65,7 +65,7 @@ export default function PixelGuide() {
 
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.45,
+    threshold: 0.1,
   });
 
   const [state, setState] = useState("walk");
@@ -152,7 +152,7 @@ export default function PixelGuide() {
   }, [inView]);
 
   return (
-    <div ref={ref} className="absolute inset-0 overflow-hidden">
+    <div ref={ref} className="absolute inset-0">
     <motion.div
 
       initial={{
