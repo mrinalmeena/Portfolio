@@ -13,7 +13,7 @@ export default function Education() {
       {/* Top Left Pink Watercolor */}
 
       <img
-        src="/images/watercolor-pink.png"
+        src={`${import.meta.env.BASE_URL}images/watercolor-pink.png`}
         alt=""
         className="
           absolute
@@ -29,7 +29,7 @@ export default function Education() {
       {/* Bottom Right Pink Watercolor */}
 
       <img
-        src="/images/watercolor-pink.png"
+        src={`${import.meta.env.BASE_URL}images/watercolor-pink.png`}
         alt=""
         className="
           absolute
@@ -75,7 +75,7 @@ export default function Education() {
             {/* Watercolor behind Heading */}
 
             <img
-              src="/images/mixwatercolor.png"
+              src={`${import.meta.env.BASE_URL}images/mixwatercolor.png`}
               alt=""
               className="
                 absolute
@@ -304,7 +304,7 @@ export default function Education() {
                 />
 
                 <img
-                  src="/images/hero-banner-full.png"
+                  src={`${import.meta.env.BASE_URL}images/hero-banner-full.png`}
                   alt="IEEE Team Award"
                   className="
                     w-full
@@ -489,7 +489,7 @@ engineering interviews.
         {/* Butterfly 1 */}
 
         <motion.img
-          src="/images/butterfly.png"
+          src={`${import.meta.env.BASE_URL}images/butterfly.png`}
           alt=""
           className="
             absolute

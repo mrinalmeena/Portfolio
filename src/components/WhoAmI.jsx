@@ -12,7 +12,7 @@ export default function WhoAmI() {
       {/* Watercolor Decorations */}
       {/* Pink Watercolor */}
 <img
-  src="/images/watercolor-pink.png"
+  src={`${import.meta.env.BASE_URL}images/watercolor-pink.png`}
   alt=""
   className="
     absolute
@@ -28,7 +28,7 @@ export default function WhoAmI() {
 
 {/* Orange Watercolor */}
 <img
-  src="/images/watercolor-orange.png"
+  src={`${import.meta.env.BASE_URL}images/watercolor-orange.png`}
   alt=""
   className="
     absolute
@@ -139,7 +139,7 @@ export default function WhoAmI() {
   "
 >
   <motion.img
-    src="/images/profile-photo-polaroid.png"
+    src={`${import.meta.env.BASE_URL}images/profile-photo-polaroid.png`}
     alt="Mrinal Meena"
     className="w-full h-[470px] object-cover"
     initial={{ filter: "grayscale(100%)" }}

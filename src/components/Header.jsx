@@ -52,8 +52,8 @@ export default function Header() {
 
         {/* Resume Button */}
         <a
-          href="/resume.pdf"
-          target="/Mrinal-Meena-Resume.pdf"
+          href={`${import.meta.env.BASE_URL}resume.pdf`}
+          target="_blank"
           rel="noopener noreferrer"
           className="
             hidden

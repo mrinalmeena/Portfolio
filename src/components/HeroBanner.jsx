@@ -30,7 +30,7 @@ export default function HeroBanner() {
         {/* Hero Image */}
         <div >
           <img
-            src="/images/hero-banner-closeup.png"
+            src={`${import.meta.env.BASE_URL}images/hero-banner-closeup.png`}
             alt="Hero"
           />
 

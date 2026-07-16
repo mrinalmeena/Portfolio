@@ -93,7 +93,7 @@ export default function Projects() {
     <section id="projects" className="relative px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-cream overflow-hidden">
             {/* Watercolor */}
             <img
-        src="/images/watercolor-pink.png"
+        src={`${import.meta.env.BASE_URL}images/watercolor-pink.png`}
         alt=""
         className="
           absolute
@@ -109,7 +109,7 @@ export default function Projects() {
       
       {/* Orange Watercolor */}
       <img
-        src="/images/watercolor-orange.png"
+        src={`${import.meta.env.BASE_URL}images/watercolor-orange.png`}
         alt=""
         className="
           absolute
@@ -127,13 +127,13 @@ export default function Projects() {
       
             {/* Butterflies */}
             <img
-              src="/images/butterfly.png"
+              src={`${import.meta.env.BASE_URL}images/butterfly.png`}
               alt=""
               className="absolute top-20 right-52 w-14 animate-float z-20"
             />
       
             <img
-              src="/images/butterfly.png"
+              src={`${import.meta.env.BASE_URL}images/butterfly.png`}
               alt=""
               className="absolute top-48 right-10 w-10 rotate-12 animate-float z-20"
             />
