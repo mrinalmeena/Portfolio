@@ -152,10 +152,8 @@ export default function PixelGuide() {
   }, [inView]);
 
   return (
-
+    <div ref={ref} className="absolute inset-0 overflow-hidden">
     <motion.div
-
-      ref={ref}
 
       initial={{
         x: 420
@@ -219,6 +217,7 @@ pointer-events-none
       />
 
     </motion.div>
+    </div>
 
   )
 };
