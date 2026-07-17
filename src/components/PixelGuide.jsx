@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 import useSpriteAnimation from "../hooks/useSpriteAnimation";
 import SpeechBubble from "./SpeechBubble";
-import Arrow from "./Arrow";
+
 
 /* ---------- IMPORT SPRITES ---------- */
 
@@ -72,9 +72,7 @@ export default function PixelGuide() {
 
   const [bubbleVisible, setBubbleVisible] = useState(false);
 
-  const [arrowVisible, setArrowVisible] = useState(false);
 
-  const [bubbleText, setBubbleText] = useState("");
 
   const [xPos, setXPos] = useState(420);
 
@@ -121,20 +119,11 @@ export default function PixelGuide() {
 
       setBubbleVisible(true);
 
-      setBubbleText(`Hi! I'm Mrinal Meena. Open to internships, research collaborations, and exciting projects. Let's build something meaningful together!`);
-
     }, 4200);
-
-    const arrow = setTimeout(() => {
-
-      setArrowVisible(true);
-
-    }, 10000);
 
     // Walk back out after showing everything
     const walkBack = setTimeout(() => {
       setBubbleVisible(false);
-      setArrowVisible(false);
       setFacingLeft(false);
       setState("walk");
       setXPos(420);
@@ -144,7 +133,6 @@ export default function PixelGuide() {
 
       clearTimeout(walk);
       clearTimeout(wave);
-      clearTimeout(arrow);
       clearTimeout(walkBack);
 
     };
@@ -209,11 +197,6 @@ pointer-events-none
 
       <SpeechBubble
         visible={bubbleVisible}
-        text={bubbleText}
-      />
-
-      <Arrow
-        visible={arrowVisible}
       />
 
     </motion.div>

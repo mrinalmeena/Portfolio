@@ -1,8 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
+
+const MESSAGE =
+  "Hi! I'm Mrinal Meena. Open to internships, research collaborations, and exciting projects. Let's build something meaningful together!";
 
 export default function SpeechBubble({
   visible,
-  text,
+  onTypingComplete,
   className = "",
 }) {
   return (
@@ -42,7 +46,7 @@ export default function SpeechBubble({
 
           className={`
             absolute
-            bottom-[170px]
+            bottom-[310px]
             right-[120px]
             z-50
             ${className}
@@ -62,6 +66,7 @@ export default function SpeechBubble({
               border
               border-[#8B1E23]/15
               max-w-[320px]
+              min-h-[100px]
             "
           >
 
@@ -73,7 +78,16 @@ export default function SpeechBubble({
                 text-[16px]
               "
             >
-              {text}
+              <Typewriter
+                words={[MESSAGE]}
+                loop={1}
+                typeSpeed={35}
+                deleteSpeed={0}
+                delaySpeed={99999}
+                cursor
+                cursorStyle="|"
+                onLoopDone={onTypingComplete}
+              />
             </p>
 
             {/* Bubble Tail */}
